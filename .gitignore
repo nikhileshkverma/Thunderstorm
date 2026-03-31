@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+venv/
+
+scripts/wgrib2-3.8.0/
+scripts/wgrib2.tgz
+
+*.grib2
+*.nc
+*.csv
