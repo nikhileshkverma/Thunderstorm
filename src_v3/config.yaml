@@ -1,0 +1,226 @@
+# =============================================================================
+# config.yaml — Deep Learning Thunderstorm Pipeline  (v4)
+# Project: Deep Learning Thunderstorm Model for the CONUS
+# Authors: Verma, Collins, Kamangir, King, Tissot — TAMUCC
+# =============================================================================
+
+paths:
+  hrrr_base:     "/Storage03/nverma1/HRRR"
+  glm_base:      "/Storage03/nverma1/GOES16_GLM"
+  wgrib2:        "/home/nverma1/bin/wgrib2"
+  project_root:  "/Storage03/nverma1/lightning_project"
+  features_dir:  "/Storage03/nverma1/lightning_project/data/features"
+  labels_dir:    "/Storage03/nverma1/lightning_project/data/labels"
+  dataset_dir:   "/Storage03/nverma1/lightning_project/data/dataset"
+  models_dir:    "/Storage03/nverma1/lightning_project/models"
+  results_dir:   "/Storage03/nverma1/lightning_project/results"
+  logs_dir:      "/Storage03/nverma1/lightning_project/logs"
+
+hrrr:
+  cycles:         ["00", "06", "12", "18"]
+  forecast_hours: [6, 12, 18, 24, 30, 36]
+
+constants:
+  R_dry:  287.0
+  g:      9.8
+  cpd:    1005.7
+  kappa:  0.4
+  P0:     100000.0  # Waylon correction Mar 25 2026
+
+# =============================================================================
+# OFFICIAL STUDY REGIONS  (Waylon Collins email, April 2026)
+# Each region = center lat/lon of a 24km x 24km sampling box.
+# Bounding boxes define the full region for future multi-cell sampling.
+# Professor Tissot: eventually sample every 3km across entire bounding box.
+# =============================================================================
+regions:
+  - name:         "PacificNorthwest"
+    display_name: "Pacific Northwest"
+    lat:          45.5        # center = (49+42)/2
+    lon:          -118.0      # center = -(126+110)/2
+    lat_min:      42.0        # SE corner
+    lat_max:      49.0        # NE corner
+    lon_min:      -126.0      # NW corner
+    lon_max:      -110.0      # NE corner
+    box_km:       24
+    active:       true
+    description:  "Pacific Northwest including NW Pacific coastal waters"
+    koppen:       "Dry, Moist Subtropical Mid-Latitude, Moist Continental Mid-Latitude"
+    lightning:    "Low annual mean lightning strike density"
+    terrain:      "Very complex topography/orography"
+    coast:        "Pacific Ocean coastal waters"
+
+  - name:         "SouthCentral"
+    display_name: "South Central"
+    lat:          31.0        # center = (37+25)/2
+    lon:          -99.5       # center = -(109+90)/2
+    lat_min:      25.0
+    lat_max:      37.0
+    lon_min:      -109.0
+    lon_max:      -90.0
+    box_km:       24
+    active:       true
+    description:  "South Central including portions of northern Mexico and NW Gulf of Mexico"
+    koppen:       "Dry, Moist Subtropical Mid-Latitude, Moist Continental Mid-Latitude"
+    lightning:    "Moderate to High annual mean lightning strike density"
+    terrain:      "Less complex topography, steady sloping terrain"
+    coast:        "NW Gulf of Mexico"
+
+  - name:         "Florida"
+    display_name: "Florida"
+    lat:          28.0        # center = (31+25)/2
+    lon:          -81.5       # center = -(85+78)/2
+    lat_min:      25.0
+    lat_max:      31.0
+    lon_min:      -85.0
+    lon_max:      -78.0
+    box_km:       24
+    active:       true
+    description:  "Florida including adjacent Gulf and Atlantic coastal waters"
+    koppen:       "Tropical, Moist Subtropical Mid-Latitude"
+    lightning:    "High annual mean lightning strike density"
+    terrain:      "Generally flat terrain"
+    coast:        "Gulf of Mexico and Atlantic Ocean"
+
+  # Proof-of-concept region (January 2024 baseline already complete)
+  - name:         "SouthTexas_CorpusChristi"
+    display_name: "South Texas"
+    lat:          28.51052
+    lon:          -97.5052
+    lat_min:      28.4
+    lat_max:      28.62
+    lon_min:      -97.62
+    lon_max:      -97.39
+    box_km:       24
+    active:       false      # Set true when running this specific region
+    description:  "South Texas / Corpus Christi area — proof-of-concept"
+    koppen:       "Dry, Moist Subtropical Mid-Latitude"
+    lightning:    "Moderate — 6.5% rate in January 2024"
+    terrain:      "Flat coastal plain"
+    coast:        "NW Gulf of Mexico"
+
+labeling:
+  window_hours:    2
+  box_half_deg:    0.108
+  flash_threshold: 1
+
+dataset:
+  start_date:   "2024-01-01"
+  end_date:     "2024-01-31"
+  test_size:    0.15
+  val_size:     0.15
+  random_state: 42
+  split_method: "stratified"
+
+# =============================================================================
+# MODELS — all 5 models in the project
+# =============================================================================
+models:
+  random_forest:
+    n_estimators:     300
+    max_depth:        null
+    min_samples_leaf: 5
+    n_jobs:           -1
+    random_state:     42
+    class_weight:     "balanced"
+    importance_runs:  30       # Professor: "do 30 times"
+
+  xgboost:
+    n_estimators:     500
+    max_depth:        6
+    learning_rate:    0.05
+    subsample:        0.8
+    colsample_bytree: 0.8
+    eval_metric:      "logloss"
+    random_state:     42
+    n_jobs:           -1
+    tree_method:      "hist"
+    device:           "cuda"   # Tesla V100
+
+  # VAE — PRIMARY deep learning model per Waylon PDF
+  # Based on Hamid Kamangir's existing architecture
+  vae:
+    latent_dim:      64
+    hidden_dims:     [512, 256, 128]
+    beta:            1.0       # KL divergence weight
+    learning_rate:   0.001
+    batch_size:      64
+    epochs:          100
+    early_stopping:  10
+    device:          "cuda"    # Tesla V100
+    random_state:    42
+
+  # Transformer — secondary deep learning model
+  transformer:
+    d_model:         256
+    nhead:           8
+    num_layers:      4
+    dim_feedforward: 512
+    dropout:         0.1
+    learning_rate:   0.0001
+    batch_size:      64
+    epochs:          100
+    early_stopping:  10
+    device:          "cuda"
+    random_state:    42
+
+  # Autoencoder — basic DL baseline
+  autoencoder:
+    hidden_dims:     [512, 256, 64, 256, 512]
+    learning_rate:   0.001
+    batch_size:      64
+    epochs:          100
+    early_stopping:  10
+    device:          "cuda"
+    random_state:    42
+
+# =============================================================================
+# PAPER BASELINE — Collins & Tissot (2015)
+# "Prediction of Lightning Activity from Numerical Weather Models"
+# We are trying to EXCEED this with our advanced models
+# Professor: "hard-code these measurements so you can always compare"
+# =============================================================================
+paper_baseline:
+  name:        "Collins & Tissot (2015) ANN"
+  citation:    "Collins, W. & Tissot, P. (2015). Wea. Forecasting, doi:10.1002/met.1499"
+  region:      "South Texas, 400 km² domain"
+  model:       "Artificial Neural Network (ANN)"
+  data:        "HRRR / RUC model"
+  POD:         0.71
+  FAR:         0.32
+  CSI:         0.54
+  HSS:         null    # update from paper if available
+  PSS:         null    # update from paper if available
+  note:        "Approximate values — verify exact numbers from paper"
+
+non_feature_cols:
+  - "cycle_time"
+  - "forecast_hour"
+  - "latitude"
+  - "longitude"
+  - "valid_time"
+  - "label"
+  - "region"
+  - "FRICV"
+  - "SHTFL"
+  - "LHTFL"
+  - "SFCR"
+  - "MAXUWU_10m"
+  - "MAXVWV_10m"
+
+evaluation:
+  default_threshold:     0.5
+  threshold_metric:      "CSI"
+  threshold_search_min:  0.10
+  threshold_search_max:  0.90
+  threshold_search_step: 0.05
+  primary_metrics:       ["PSS", "HSS", "CSI", "POD"]
+  alarm_metrics:         ["FAR", "POFD", "Bias"]
+
+plots:
+  dpi:               150
+  prediction_target: "Lightning occurrence within 24km x 24km box, ±2hr window"
+  region_label:      "South Texas (28.51°N, 97.51°W)"
+  date_range:        "January 2024"
+  confusion_matrix_y_label: "Observation"
+  confusion_matrix_x_label: "Prediction"
