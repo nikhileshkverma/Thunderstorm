@@ -1,0 +1,588 @@
+wgrib2 path : /home/nverma1/bin/wgrib2
+wgrib2 ver  : 3.8.0
+File        : /Storage03/nverma1/HRRR/2024/hrrr.t00z.wrfnatf24_20240102.grib2
+
+Running wgrib2 -s -lon (may take ~30s)...
+Total records in file: 1136
+
+======================================================================
+EXACT wgrib2 TOKENS AND LEVEL STRINGS FOR KEY VARIABLES
+======================================================================
+
+PRES  (55 record(s) found):
+   level=[1 hybrid level]   val=100999
+   level=[2 hybrid level]   val=100699
+   level=[3 hybrid level]   val=100148
+   level=[4 hybrid level]   val=99194.6
+   level=[5 hybrid level]   val=97790.4
+   level=[6 hybrid level]   val=95983.2
+   level=[7 hybrid level]   val=93824.7
+   level=[8 hybrid level]   val=91462.8
+   level=[9 hybrid level]   val=88898.2
+   level=[10 hybrid level]   val=86031.1
+   level=[11 hybrid level]   val=82862.9
+   level=[12 hybrid level]   val=79393.6
+   level=[13 hybrid level]   val=75625.2
+   level=[14 hybrid level]   val=71559.5
+   level=[15 hybrid level]   val=67197
+   level=[16 hybrid level]   val=62538.6
+   level=[17 hybrid level]   val=57634.6
+   level=[18 hybrid level]   val=52889.3
+   level=[19 hybrid level]   val=48628.4
+   level=[20 hybrid level]   val=44821.5
+   level=[21 hybrid level]   val=41401.5
+   level=[22 hybrid level]   val=38307.6
+   level=[23 hybrid level]   val=35529.3
+   level=[24 hybrid level]   val=33031.5
+   level=[25 hybrid level]   val=30783.6
+   level=[26 hybrid level]   val=28765.4
+   level=[27 hybrid level]   val=26951.7
+   level=[28 hybrid level]   val=25267.9
+   level=[29 hybrid level]   val=23748.2
+   level=[30 hybrid level]   val=22358
+   level=[31 hybrid level]   val=20968.6
+   level=[32 hybrid level]   val=19579.7
+   level=[33 hybrid level]   val=18190.9
+   level=[34 hybrid level]   val=16802
+   level=[35 hybrid level]   val=15413.2
+   level=[36 hybrid level]   val=14024.3
+   level=[37 hybrid level]   val=12635.4
+   level=[38 hybrid level]   val=11246.6
+   level=[39 hybrid level]   val=9857.74
+   level=[40 hybrid level]   val=8567.39
+   level=[41 hybrid level]   val=7533.14
+   level=[42 hybrid level]   val=6690.96
+   level=[43 hybrid level]   val=5907.88
+   level=[44 hybrid level]   val=5174.06
+   level=[45 hybrid level]   val=4494.41
+   level=[46 hybrid level]   val=3864
+   level=[47 hybrid level]   val=3273
+   level=[48 hybrid level]   val=2721.4
+   level=[49 hybrid level]   val=2209.2
+   level=[50 hybrid level]   val=1731.48
+   level=[surface]   val=101100
+   level=[cloud base]   val=98500
+   level=[cloud top]   val=79400
+   level=[0C isotherm]   val=68300
+   level=[highest tropospheric freezing level]   val=68200
+
+TMP  (52 record(s) found):
+   level=[1 hybrid level]   val=287.001
+   level=[2 hybrid level]   val=286.783
+   level=[3 hybrid level]   val=286.713
+   level=[4 hybrid level]   val=286.716
+   level=[5 hybrid level]   val=286.291
+   level=[6 hybrid level]   val=285.738
+   level=[7 hybrid level]   val=285.54
+   level=[8 hybrid level]   val=285.326
+   level=[9 hybrid level]   val=284.525
+   level=[10 hybrid level]   val=283.182
+   level=[11 hybrid level]   val=281.543
+   level=[12 hybrid level]   val=279.999
+   level=[13 hybrid level]   val=278.627
+   level=[14 hybrid level]   val=275.904
+   level=[15 hybrid level]   val=272.172
+   level=[16 hybrid level]   val=268.127
+   level=[17 hybrid level]   val=264.032
+   level=[18 hybrid level]   val=258.869
+   level=[19 hybrid level]   val=255.84
+   level=[20 hybrid level]   val=252.927
+   level=[21 hybrid level]   val=249.417
+   level=[22 hybrid level]   val=245.552
+   level=[23 hybrid level]   val=241.43
+   level=[24 hybrid level]   val=237.254
+   level=[25 hybrid level]   val=233.361
+   level=[26 hybrid level]   val=230.023
+   level=[27 hybrid level]   val=227.843
+   level=[28 hybrid level]   val=225.987
+   level=[29 hybrid level]   val=224.056
+   level=[30 hybrid level]   val=222.109
+   level=[31 hybrid level]   val=220.568
+   level=[32 hybrid level]   val=220.015
+   level=[33 hybrid level]   val=219.762
+   level=[34 hybrid level]   val=217.946
+   level=[35 hybrid level]   val=215.568
+   level=[36 hybrid level]   val=213.254
+   level=[37 hybrid level]   val=209.154
+   level=[38 hybrid level]   val=205.962
+   level=[39 hybrid level]   val=204.523
+   level=[40 hybrid level]   val=203.298
+   level=[41 hybrid level]   val=204.841
+   level=[42 hybrid level]   val=206.693
+   level=[43 hybrid level]   val=206.781
+   level=[44 hybrid level]   val=208.118
+   level=[45 hybrid level]   val=206.282
+   level=[46 hybrid level]   val=209.932
+   level=[47 hybrid level]   val=209.138
+   level=[48 hybrid level]   val=211.438
+   level=[49 hybrid level]   val=212.569
+   level=[50 hybrid level]   val=215.182
+   level=[surface]   val=286.903
+   level=[2 m above ground]   val=286.861
+
+SPFH  (51 record(s) found):
+   level=[1 hybrid level]   val=0.00942
+   level=[2 hybrid level]   val=0.0094
+   level=[3 hybrid level]   val=0.0094
+   level=[4 hybrid level]   val=0.00956
+   level=[5 hybrid level]   val=0.00956
+   level=[6 hybrid level]   val=0.00949
+   level=[7 hybrid level]   val=0.00957
+   level=[8 hybrid level]   val=0.00971
+   level=[9 hybrid level]   val=0.00947
+   level=[10 hybrid level]   val=0.00892
+   level=[11 hybrid level]   val=0.00832
+   level=[12 hybrid level]   val=0.00781
+   level=[13 hybrid level]   val=0.006403
+   level=[14 hybrid level]   val=0.00525
+   level=[15 hybrid level]   val=0.004358
+   level=[16 hybrid level]   val=0.003532
+   level=[17 hybrid level]   val=0.002971
+   level=[18 hybrid level]   val=0.001007
+   level=[19 hybrid level]   val=0.000151
+   level=[20 hybrid level]   val=4.8e-05
+   level=[21 hybrid level]   val=5e-05
+   level=[22 hybrid level]   val=8.6e-05
+   level=[23 hybrid level]   val=9.2e-05
+   level=[24 hybrid level]   val=8.2e-05
+   level=[25 hybrid level]   val=6.39e-05
+   level=[26 hybrid level]   val=4.92e-05
+   level=[27 hybrid level]   val=3.81e-05
+   level=[28 hybrid level]   val=2.9e-05
+   level=[29 hybrid level]   val=2.46e-05
+   level=[30 hybrid level]   val=2.18e-05
+   level=[31 hybrid level]   val=1.72e-05
+   level=[32 hybrid level]   val=1.098e-05
+   level=[33 hybrid level]   val=5.95e-06
+   level=[34 hybrid level]   val=3.84e-06
+   level=[35 hybrid level]   val=2.99e-06
+   level=[36 hybrid level]   val=2.51e-06
+   level=[37 hybrid level]   val=2.403e-06
+   level=[38 hybrid level]   val=2.39e-06
+   level=[39 hybrid level]   val=2.192e-06
+   level=[40 hybrid level]   val=1.95e-06
+   level=[41 hybrid level]   val=1.87e-06
+   level=[42 hybrid level]   val=1.926e-06
+   level=[43 hybrid level]   val=1.9e-06
+   level=[44 hybrid level]   val=1.803e-06
+   level=[45 hybrid level]   val=1.744e-06
+   level=[46 hybrid level]   val=1.6666e-06
+   level=[47 hybrid level]   val=1.6513e-06
+   level=[48 hybrid level]   val=1.6891e-06
+   level=[49 hybrid level]   val=1.6723e-06
+   level=[50 hybrid level]   val=1.689e-06
+   level=[2 m above ground]   val=0.00944
+
+UGRD  (52 record(s) found):
+   level=[1 hybrid level]   val=-1.68891
+   level=[2 hybrid level]   val=-2.4151
+   level=[3 hybrid level]   val=-3.04571
+   level=[4 hybrid level]   val=-5.26466
+   level=[5 hybrid level]   val=-7.61959
+   level=[6 hybrid level]   val=-9.14888
+   level=[7 hybrid level]   val=-9.74668
+   level=[8 hybrid level]   val=-8.13105
+   level=[9 hybrid level]   val=-5.08034
+   level=[10 hybrid level]   val=-3.28435
+   level=[11 hybrid level]   val=-1.15802
+   level=[12 hybrid level]   val=3.83908
+   level=[13 hybrid level]   val=9.62886
+   level=[14 hybrid level]   val=9.59682
+   level=[15 hybrid level]   val=8.3759
+   level=[16 hybrid level]   val=10.3544
+   level=[17 hybrid level]   val=15.5166
+   level=[18 hybrid level]   val=25.7186
+   level=[19 hybrid level]   val=32.6831
+   level=[20 hybrid level]   val=38.5642
+   level=[21 hybrid level]   val=43.301
+   level=[22 hybrid level]   val=46.7646
+   level=[23 hybrid level]   val=49.2976
+   level=[24 hybrid level]   val=50.2701
+   level=[25 hybrid level]   val=50.5087
+   level=[26 hybrid level]   val=51.9705
+   level=[27 hybrid level]   val=55.4889
+   level=[28 hybrid level]   val=59.4303
+   level=[29 hybrid level]   val=62.5151
+   level=[30 hybrid level]   val=63.5253
+   level=[31 hybrid level]   val=60.9599
+   level=[32 hybrid level]   val=55.3908
+   level=[33 hybrid level]   val=49.4828
+   level=[34 hybrid level]   val=44.4442
+   level=[35 hybrid level]   val=41.1144
+   level=[36 hybrid level]   val=39.5322
+   level=[37 hybrid level]   val=39.0997
+   level=[38 hybrid level]   val=38.9067
+   level=[39 hybrid level]   val=34.4287
+   level=[40 hybrid level]   val=29.7059
+   level=[41 hybrid level]   val=26.5443
+   level=[42 hybrid level]   val=20.0828
+   level=[43 hybrid level]   val=12.2354
+   level=[44 hybrid level]   val=3.92167
+   level=[45 hybrid level]   val=1.26443
+   level=[46 hybrid level]   val=4.48093
+   level=[47 hybrid level]   val=4.29015
+   level=[48 hybrid level]   val=3.60335
+   level=[49 hybrid level]   val=4.12235
+   level=[50 hybrid level]   val=6.48069
+   level=[80 m above ground]   val=-2.91213
+   level=[10 m above ground]   val=-1.79712
+
+VGRD  (52 record(s) found):
+   level=[1 hybrid level]   val=-3.62407
+   level=[2 hybrid level]   val=-4.83192
+   level=[3 hybrid level]   val=-5.38173
+   level=[4 hybrid level]   val=-4.7001
+   level=[5 hybrid level]   val=-2.84048
+   level=[6 hybrid level]   val=-0.743944
+   level=[7 hybrid level]   val=2.55103
+   level=[8 hybrid level]   val=6.21213
+   level=[9 hybrid level]   val=8.51594
+   level=[10 hybrid level]   val=9.47263
+   level=[11 hybrid level]   val=9.43101
+   level=[12 hybrid level]   val=9.33163
+   level=[13 hybrid level]   val=11.6939
+   level=[14 hybrid level]   val=11.2921
+   level=[15 hybrid level]   val=10.2697
+   level=[16 hybrid level]   val=12.1081
+   level=[17 hybrid level]   val=10.1142
+   level=[18 hybrid level]   val=10.4014
+   level=[19 hybrid level]   val=13.9927
+   level=[20 hybrid level]   val=14.8023
+   level=[21 hybrid level]   val=13.0088
+   level=[22 hybrid level]   val=11.6611
+   level=[23 hybrid level]   val=11.3494
+   level=[24 hybrid level]   val=11.8881
+   level=[25 hybrid level]   val=12.7216
+   level=[26 hybrid level]   val=13.2465
+   level=[27 hybrid level]   val=13.0766
+   level=[28 hybrid level]   val=12.9957
+   level=[29 hybrid level]   val=13.093
+   level=[30 hybrid level]   val=13.0179
+   level=[31 hybrid level]   val=12.914
+   level=[32 hybrid level]   val=11.8535
+   level=[33 hybrid level]   val=8.10065
+   level=[34 hybrid level]   val=3.82787
+   level=[35 hybrid level]   val=3.72985
+   level=[36 hybrid level]   val=2.53549
+   level=[37 hybrid level]   val=1.25995
+   level=[38 hybrid level]   val=-0.788074
+   level=[39 hybrid level]   val=-5.59402
+   level=[40 hybrid level]   val=-4.81404
+   level=[41 hybrid level]   val=-4.55476
+   level=[42 hybrid level]   val=-7.50155
+   level=[43 hybrid level]   val=-6.29145
+   level=[44 hybrid level]   val=-2.94615
+   level=[45 hybrid level]   val=-0.524086
+   level=[46 hybrid level]   val=2.35443
+   level=[47 hybrid level]   val=1.05449
+   level=[48 hybrid level]   val=-1.94069
+   level=[49 hybrid level]   val=1.07654
+   level=[50 hybrid level]   val=0.850647
+   level=[80 m above ground]   val=-5.30808
+   level=[10 m above ground]   val=-3.77392
+
+VVEL  (50 record(s) found):
+   level=[1 hybrid level]   val=0.0567818
+   level=[2 hybrid level]   val=0.0272083
+   level=[3 hybrid level]   val=-0.0120907
+   level=[4 hybrid level]   val=-0.0864983
+   level=[5 hybrid level]   val=-0.2428
+   level=[6 hybrid level]   val=-0.464531
+   level=[7 hybrid level]   val=-0.697899
+   level=[8 hybrid level]   val=-0.891109
+   level=[9 hybrid level]   val=-0.87529
+   level=[10 hybrid level]   val=-0.525684
+   level=[11 hybrid level]   val=0.0500107
+   level=[12 hybrid level]   val=0.183777
+   level=[13 hybrid level]   val=-0.684349
+   level=[14 hybrid level]   val=-2.13613
+   level=[15 hybrid level]   val=-2.94071
+   level=[16 hybrid level]   val=-1.48544
+   level=[17 hybrid level]   val=1.14474
+   level=[18 hybrid level]   val=1.72102
+   level=[19 hybrid level]   val=-0.0107651
+   level=[20 hybrid level]   val=-1.64199
+   level=[21 hybrid level]   val=-2.27448
+   level=[22 hybrid level]   val=-2.29924
+   level=[23 hybrid level]   val=-2.09706
+   level=[24 hybrid level]   val=-1.82653
+   level=[25 hybrid level]   val=-1.60946
+   level=[26 hybrid level]   val=-1.51724
+   level=[27 hybrid level]   val=-1.54195
+   level=[28 hybrid level]   val=-1.62128
+   level=[29 hybrid level]   val=-1.64699
+   level=[30 hybrid level]   val=-1.56874
+   level=[31 hybrid level]   val=-1.40029
+   level=[32 hybrid level]   val=-1.21523
+   level=[33 hybrid level]   val=-1.04049
+   level=[34 hybrid level]   val=-0.870187
+   level=[35 hybrid level]   val=-0.675029
+   level=[36 hybrid level]   val=-0.468366
+   level=[37 hybrid level]   val=-0.187234
+   level=[38 hybrid level]   val=0.168589
+   level=[39 hybrid level]   val=0.419444
+   level=[40 hybrid level]   val=0.488051
+   level=[41 hybrid level]   val=0.384869
+   level=[42 hybrid level]   val=0.144005
+   level=[43 hybrid level]   val=-0.052834
+   level=[44 hybrid level]   val=-0.0982912
+   level=[45 hybrid level]   val=-0.061408
+   level=[46 hybrid level]   val=-0.0358555
+   level=[47 hybrid level]   val=-0.030904
+   level=[48 hybrid level]   val=0.0104162
+   level=[49 hybrid level]   val=0.00241079
+   level=[50 hybrid level]   val=-0.00217577
+
+TKE  (50 record(s) found):
+   level=[1 hybrid level]   val=0.500059
+   level=[2 hybrid level]   val=0.50005
+   level=[3 hybrid level]   val=0.25005
+   level=[4 hybrid level]   val=0.25005
+   level=[5 hybrid level]   val=0.25005
+   level=[6 hybrid level]   val=5e-05
+   level=[7 hybrid level]   val=5e-05
+   level=[8 hybrid level]   val=5e-05
+   level=[9 hybrid level]   val=5e-05
+   level=[10 hybrid level]   val=5e-05
+   level=[11 hybrid level]   val=5e-05
+   level=[12 hybrid level]   val=5e-05
+   level=[13 hybrid level]   val=5e-05
+   level=[14 hybrid level]   val=5e-05
+   level=[15 hybrid level]   val=5e-05
+   level=[16 hybrid level]   val=5e-05
+   level=[17 hybrid level]   val=5e-05
+   level=[18 hybrid level]   val=5e-05
+   level=[19 hybrid level]   val=5e-05
+   level=[20 hybrid level]   val=5e-05
+   level=[21 hybrid level]   val=5e-05
+   level=[22 hybrid level]   val=5e-05
+   level=[23 hybrid level]   val=5e-05
+   level=[24 hybrid level]   val=5e-05
+   level=[25 hybrid level]   val=5e-05
+   level=[26 hybrid level]   val=5e-05
+   level=[27 hybrid level]   val=5e-05
+   level=[28 hybrid level]   val=5e-05
+   level=[29 hybrid level]   val=5e-05
+   level=[30 hybrid level]   val=5e-05
+   level=[31 hybrid level]   val=5e-05
+   level=[32 hybrid level]   val=5e-05
+   level=[33 hybrid level]   val=5e-05
+   level=[34 hybrid level]   val=5e-05
+   level=[35 hybrid level]   val=5e-05
+   level=[36 hybrid level]   val=5e-05
+   level=[37 hybrid level]   val=5e-05
+   level=[38 hybrid level]   val=5e-05
+   level=[39 hybrid level]   val=5e-05
+   level=[40 hybrid level]   val=5e-05
+   level=[41 hybrid level]   val=5e-05
+   level=[42 hybrid level]   val=6e-05
+   level=[43 hybrid level]   val=7e-05
+   level=[44 hybrid level]   val=5e-05
+   level=[45 hybrid level]   val=5e-05
+   level=[46 hybrid level]   val=5e-05
+   level=[47 hybrid level]   val=5e-05
+   level=[48 hybrid level]   val=5e-05
+   level=[49 hybrid level]   val=5e-05
+   level=[50 hybrid level]   val=5e-05
+
+PMTF  (50 record(s) found):
+   level=[1 hybrid level]   val=3.49e+09
+   level=[2 hybrid level]   val=3.46e+09
+   level=[3 hybrid level]   val=3.35e+09
+   level=[4 hybrid level]   val=3.11e+09
+   level=[5 hybrid level]   val=3.08e+09
+   level=[6 hybrid level]   val=3.17e+09
+   level=[7 hybrid level]   val=3e+09
+   level=[8 hybrid level]   val=2.87e+09
+   level=[9 hybrid level]   val=2.58e+09
+   level=[10 hybrid level]   val=2.37e+09
+   level=[11 hybrid level]   val=2.04e+09
+   level=[12 hybrid level]   val=1.63e+09
+   level=[13 hybrid level]   val=1.6e+09
+   level=[14 hybrid level]   val=1.25e+09
+   level=[15 hybrid level]   val=9.4e+08
+   level=[16 hybrid level]   val=7.2e+08
+   level=[17 hybrid level]   val=4.2e+08
+   level=[18 hybrid level]   val=5.5e+08
+   level=[19 hybrid level]   val=4.2e+08
+   level=[20 hybrid level]   val=3.8e+08
+   level=[21 hybrid level]   val=3.8e+08
+   level=[22 hybrid level]   val=3.8e+08
+   level=[23 hybrid level]   val=3.6e+08
+   level=[24 hybrid level]   val=3.3e+08
+   level=[25 hybrid level]   val=3.1e+08
+   level=[26 hybrid level]   val=3.14e+08
+   level=[27 hybrid level]   val=3.13e+08
+   level=[28 hybrid level]   val=3.07e+08
+   level=[29 hybrid level]   val=3.04e+08
+   level=[30 hybrid level]   val=3.08e+08
+   level=[31 hybrid level]   val=3.13e+08
+   level=[32 hybrid level]   val=3.21e+08
+   level=[33 hybrid level]   val=3.38e+08
+   level=[34 hybrid level]   val=3.61e+08
+   level=[35 hybrid level]   val=3.92e+08
+   level=[36 hybrid level]   val=4.31e+08
+   level=[37 hybrid level]   val=4.57e+08
+   level=[38 hybrid level]   val=5.02e+08
+   level=[39 hybrid level]   val=5.56e+08
+   level=[40 hybrid level]   val=5.87e+08
+   level=[41 hybrid level]   val=6.17e+08
+   level=[42 hybrid level]   val=6.61e+08
+   level=[43 hybrid level]   val=6.846e+08
+   level=[44 hybrid level]   val=6.824e+08
+   level=[45 hybrid level]   val=6.79e+08
+   level=[46 hybrid level]   val=6.677e+08
+   level=[47 hybrid level]   val=6.593e+08
+   level=[48 hybrid level]   val=6.459e+08
+   level=[49 hybrid level]   val=6.329e+08
+   level=[50 hybrid level]   val=6.159e+08
+
+PMTC  (50 record(s) found):
+   level=[1 hybrid level]   val=750000
+   level=[2 hybrid level]   val=750000
+   level=[3 hybrid level]   val=740000
+   level=[4 hybrid level]   val=730000
+   level=[5 hybrid level]   val=720000
+   level=[6 hybrid level]   val=710000
+   level=[7 hybrid level]   val=680000
+   level=[8 hybrid level]   val=640000
+   level=[9 hybrid level]   val=560000
+   level=[10 hybrid level]   val=500000
+   level=[11 hybrid level]   val=450000
+   level=[12 hybrid level]   val=460000
+   level=[13 hybrid level]   val=380000
+   level=[14 hybrid level]   val=340000
+   level=[15 hybrid level]   val=310000
+   level=[16 hybrid level]   val=290000
+   level=[17 hybrid level]   val=340000
+   level=[18 hybrid level]   val=233000
+   level=[19 hybrid level]   val=230000
+   level=[20 hybrid level]   val=166000
+   level=[21 hybrid level]   val=130000
+   level=[22 hybrid level]   val=122000
+   level=[23 hybrid level]   val=105000
+   level=[24 hybrid level]   val=80000
+   level=[25 hybrid level]   val=57000
+   level=[26 hybrid level]   val=41000
+   level=[27 hybrid level]   val=28000
+   level=[28 hybrid level]   val=18000
+   level=[29 hybrid level]   val=14000
+   level=[30 hybrid level]   val=12000
+   level=[31 hybrid level]   val=11000
+   level=[32 hybrid level]   val=8600
+   level=[33 hybrid level]   val=6300
+   level=[34 hybrid level]   val=5500
+   level=[35 hybrid level]   val=5210
+   level=[36 hybrid level]   val=5050
+   level=[37 hybrid level]   val=5000
+   level=[38 hybrid level]   val=5040
+   level=[39 hybrid level]   val=5240
+   level=[40 hybrid level]   val=5340
+   level=[41 hybrid level]   val=5200
+   level=[42 hybrid level]   val=5110
+   level=[43 hybrid level]   val=5230
+   level=[44 hybrid level]   val=5370
+   level=[45 hybrid level]   val=5280
+   level=[46 hybrid level]   val=5060
+   level=[47 hybrid level]   val=5020
+   level=[48 hybrid level]   val=5010
+   level=[49 hybrid level]   val=5000
+   level=[50 hybrid level]   val=5000
+
+DZDT  (1 record(s) found):
+   level=[0.5-0.8 sigma layer]   val=-0.0380697
+
+RELV  (2 record(s) found):
+   level=[2000-0 m above ground]   val=0.001626
+   level=[1000-0 m above ground]   val=0.001626
+
+LTNG  (1 record(s) found):
+   level=[entire atmosphere]   val=0
+
+PWAT  (1 record(s) found):
+   level=[entire atmosphere (considered as a single layer)]   val=32.325
+
+AOTK  (1 record(s) found):
+   level=[entire atmosphere (considered as a single layer)]   val=0.00136
+
+RHPW  (1 record(s) found):
+   level=[entire atmosphere]   val=85.4
+
+POT  (1 record(s) found):
+   level=[2 m above ground]   val=286.032
+
+DPT  (1 record(s) found):
+   level=[2 m above ground]   val=286.485
+
+RH  (3 record(s) found):
+   level=[2 m above ground]   val=96.5
+   level=[0C isotherm]   val=82
+   level=[highest tropospheric freezing level]   val=82
+
+WIND  (1 record(s) found):
+   level=[10 m above ground]   val=4.47433
+
+GUST  (1 record(s) found):
+   level=[surface]   val=6.78825
+
+MAXUWU:  *** NOT FOUND IN FILE ***
+
+MAXVWV:  *** NOT FOUND IN FILE ***
+
+FRICV  (1 record(s) found):
+   level=[surface]   val=0.37
+
+SHTFL  (1 record(s) found):
+   level=[surface]   val=-2
+
+LHTFL  (1 record(s) found):
+   level=[surface]   val=7
+
+CAPE  (5 record(s) found):
+   level=[surface]   val=0
+   level=[180-0 mb above ground]   val=240
+   level=[90-0 mb above ground]   val=0
+   level=[255-0 mb above ground]   val=170
+   level=[0-3000 m above ground]   val=2.6
+
+CIN  (4 record(s) found):
+   level=[surface]   val=0
+   level=[180-0 mb above ground]   val=-1
+   level=[90-0 mb above ground]   val=0
+   level=[255-0 mb above ground]   val=-8
+
+HPBL  (1 record(s) found):
+   level=[surface]   val=329.752
+
+CNWAT  (1 record(s) found):
+   level=[surface]   val=0.1
+
+SFCR  (1 record(s) found):
+   level=[surface]   val=0.1202
+
+VGTYP  (1 record(s) found):
+   level=[surface]   val=9
+
+VUCSH  (2 record(s) found):
+   level=[0-1000 m above ground]   val=-4.62021
+   level=[0-6000 m above ground]   val=37.5623
+
+VVCSH  (2 record(s) found):
+   level=[0-1000 m above ground]   val=11.6809
+   level=[0-6000 m above ground]   val=17.6284
+
+MSLMA  (1 record(s) found):
+   level=[mean sea level]   val=101730
+
+MSLMAM:  *** NOT FOUND IN FILE ***
+
+SOILW  (2 record(s) found):
+   level=[0-0 m below ground]   val=0.278
+   level=[0.01-0.01 m below ground]   val=0.277
+
+MSTAV  (1 record(s) found):
+   level=[0 m underground]   val=75.6
+
+======================================================================
+DONE — share this output so Claude can fix any remaining NaN columns
+======================================================================

@@ -1,0 +1,7 @@
+
+DATASET BUILD SUMMARY (v2 — Stratified Split)
+Full:  744 rows | lightning=48(6.5%) no-light=696
+Train: 520 rows | lightning=34(6.5%) no-light=486
+Val:   112 rows | lightning=7(6.2%) no-light=105
+Test:  112 rows | lightning=7(6.2%) no-light=105
+Features: 735

@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+
+scripts/wgrib2-3.8.0/
+*.tgz
+
+*.csv
+*.nc
+*.log
