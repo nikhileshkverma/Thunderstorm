@@ -14,3 +14,7 @@ venv/
 __pycache__/
 models/
 results/
+venv/
+__pycache__/
+models/
+results/
