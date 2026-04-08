@@ -8,3 +8,9 @@ scripts/wgrib2-3.8.0/
 *.csv
 *.nc
 *.log
+models/
+results/
+venv/
+__pycache__/
+models/
+results/
